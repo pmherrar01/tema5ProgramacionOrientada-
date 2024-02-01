@@ -15,6 +15,11 @@ public class Rueda {
 	public void setPulgadas(int pulgadas) {
 		this.pulgadas = pulgadas;
 	}
+	public Rueda(String material, int pulgadas) {
+		this.material = material;
+		this.pulgadas = pulgadas;
+	}
+	
 	
 	
 }
