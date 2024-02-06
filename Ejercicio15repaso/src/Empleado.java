@@ -31,5 +31,9 @@ public class Empleado {
 		this.salario = salario;
 	}
 	
+	@Override
 	
+	public String toString() {
+		return "Empleado" + "Nombre:" + nombre + "\n" + "Salario: " + salario + "\n" + "Direccion: " + direccion.toString();
+	}	
 }
