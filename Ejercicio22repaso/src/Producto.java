@@ -33,11 +33,21 @@ public class Producto {
 	public void setStcok(int stock) {
 		this.stock = stock;
 	}
+	
+	public static int reducirStock(int cantidad){
+		if(cantidad>stock) {int stock=0;
+		stock= stock-cantidad;
+		System.out.println("Venta realizada con exito");
+		}else {
+			System.out.println("lo siento solo tenemos" + stock +"unidades");
+		}
+		return stock;
+	}
 
 	@Override
 
 	public String toString() {
-		return " un " + nombre +" que cuesta: " + precio + " y nos quedan: " + stock+ " unidades";
+		return " un " + nombre +" que cuesta: " + precio + "€ y nos quedan: " + stock+ " unidades";
 	}
 
 
